@@ -12,14 +12,14 @@ export default function Home() {
     <Head> 
         <title> Destinations </title> 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Yellowtail&display=swap" rel="stylesheet" />
     </Head> 
     <div> 
       <Navbar /> 
       <div className = {styles.main} > 
         { Destinations.map( (destination,index) => (
-          <div className = {`${styles.card}`}>
+          <div className = {`${styles.card}`} key = {index}>
             <DestinationCard {...destination} /> 
           </div> 
         ))}
