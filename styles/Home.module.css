@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center; 
   flex-wrap: wrap;
-  margin-top: 100px;  
+  margin-top: 6rem; 
   padding-top: 2rem; 
   padding-left: 5rem; 
   padding-right: 5rem; 
@@ -11,8 +11,8 @@
 }
 
 .card {
-  padding: 20px; 
-  min-width: 345px; 
+  padding: 1.3rem; 
+  min-width: 22rem; 
   height: 100%;  
 }
 
@@ -22,18 +22,52 @@
 
 .navbar { 
   background-color: #A7D2CB; 
-  height: 100px; 
+  height: 6rem;  
   width: 100vw; 
-  font-size: 50px;   
-  font-family: 'Quicksand', sans-serif;
-  font-family: 'Yellowtail', cursive; 
   position: fixed; 
   top: 0; 
-  z-index: 1;  
+  z-index: 2;  
+  display: flex; 
+  align-items: center;
+  justify-content: space-between; 
+  padding-right: 3rem; 
 }
 
 .logo { 
   display: flex; 
   align-items: center;
-  padding: 10px;  
+  padding: 0.5rem;  
+  font-size: 3rem;    
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Yellowtail', cursive;  
 }
+
+.favorite { 
+  display: flex; 
+  align-items: center; 
+  padding: 1.25rem;  
+}
+
+.favorite:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.heart { 
+  z-index: 1; 
+  position: absolute; 
+  padding: 0.625rem; 
+}
+
+.heart:hover { 
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.hidden { 
+  display: none;
+}
+
+
+
+
+
+
